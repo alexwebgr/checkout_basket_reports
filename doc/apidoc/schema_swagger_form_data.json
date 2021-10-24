@@ -1,0 +1,622 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "CheckoutBasket (params in:formData)",
+    "description": "\n<p>Another API description</p>\n",
+    "version": "1.0",
+    "x-copyright": null
+  },
+  "basePath": "/",
+  "consumes": [
+    "application/x-www-form-urlencoded",
+    "multipart/form-data"
+  ],
+  "paths": {
+    "/checkout_products": {
+      "get": {
+        "tags": [
+          "checkout_products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_checkout_products",
+        "summary": "List checkout products",
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "post": {
+        "tags": [
+          "checkout_products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "post_checkout_products",
+        "summary": "Create a checkout product",
+        "parameters": [
+
+        ],
+        "responses": {
+          "422": {
+            "description": null
+          }
+        },
+        "description": ""
+      }
+    },
+    "/checkout_products/{id}": {
+      "get": {
+        "tags": [
+          "checkout_products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_checkout_products_id",
+        "summary": "Show a checkout product",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "patch": {
+        "tags": [
+          "checkout_products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "patch_checkout_products_id",
+        "summary": "Update a checkout product",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "422": {
+            "description": null
+          }
+        },
+        "description": ""
+      },
+      "delete": {
+        "tags": [
+          "checkout_products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "delete_checkout_products_id",
+        "summary": "Destroy a checkout product",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/checkout_sessions": {
+      "get": {
+        "tags": [
+          "checkout_sessions"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_checkout_sessions",
+        "summary": "List checkout sessions",
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "post": {
+        "tags": [
+          "checkout_sessions"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "post_checkout_sessions",
+        "summary": "Create a checkout session",
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/checkout_sessions/{id}": {
+      "get": {
+        "tags": [
+          "checkout_sessions"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_checkout_sessions_id",
+        "summary": "Show a checkout session",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "patch": {
+        "tags": [
+          "checkout_sessions"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "patch_checkout_sessions_id",
+        "summary": "Update a checkout session",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "put": {
+        "tags": [
+          "checkout_sessions"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "put_checkout_sessions_id",
+        "summary": "Update a checkout session",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "delete": {
+        "tags": [
+          "checkout_sessions"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "delete_checkout_sessions_id",
+        "summary": "Destroy a checkout session",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/products": {
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_products",
+        "summary": "List products",
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "post": {
+        "tags": [
+          "products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "post_products",
+        "summary": "Create a product",
+        "parameters": [
+
+        ],
+        "responses": {
+          "422": {
+            "description": null
+          }
+        },
+        "description": ""
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_products_id",
+        "summary": "Show a product",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "patch": {
+        "tags": [
+          "products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "patch_products_id",
+        "summary": "Update a product",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "422": {
+            "description": null
+          }
+        },
+        "description": ""
+      },
+      "delete": {
+        "tags": [
+          "products"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "delete_products_id",
+        "summary": "Destroy a product",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/basket/list/{checkout_session_id}": {
+      "get": {
+        "tags": [
+          "basket"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_basket_list_checkout_session_id",
+        "summary": "List all products currently in the checkout_products for this session that are not removed",
+        "parameters": [
+          {
+            "name": "checkout_session_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": null
+          }
+        },
+        "description": ""
+      }
+    },
+    "/basket/add_product/{checkout_session_id}/{product_id}": {
+      "post": {
+        "tags": [
+          "basket"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "post_basket_add_product_checkout_session_id_product_id",
+        "summary": "Add a product to the checkout_products for this session",
+        "parameters": [
+          {
+            "name": "product_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "checkout_session_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "403": {
+            "description": null
+          },
+          "404": {
+            "description": null
+          },
+          "422": {
+            "description": null
+          }
+        },
+        "description": ""
+      }
+    },
+    "/basket/remove_product/{checkout_product_id}": {
+      "patch": {
+        "tags": [
+          "basket"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "patch_basket_remove_product_checkout_product_id",
+        "summary": "Mark a product as removed by updating the removed_at field in checkout_products table",
+        "parameters": [
+          {
+            "name": "checkout_product_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": null
+          }
+        },
+        "description": ""
+      }
+    },
+    "/basket/checkout_complete/{checkout_session_id}": {
+      "patch": {
+        "tags": [
+          "basket"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "patch_basket_checkout_complete_checkout_session_id",
+        "summary": "Update the ended_at field in the checkout_session table",
+        "parameters": [
+          {
+            "name": "checkout_session_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": null
+          }
+        },
+        "description": ""
+      }
+    },
+    "/reports/count_removed_products": {
+      "get": {
+        "tags": [
+          "reports"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_reports_count_removed_products",
+        "summary": "Count how many times a product was removed from the basket (checkout_products)",
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/reports/products_grouped_by_session": {
+      "get": {
+        "tags": [
+          "reports"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_reports_products_grouped_by_session",
+        "summary": "Show me all sessions with a list of products",
+        "parameters": [
+          {
+            "name": "removed_status",
+            "type": "string",
+            "in": "query",
+            "default": "all"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/reports/products": {
+      "get": {
+        "tags": [
+          "reports"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_reports_products",
+        "summary": "Show me a list of removed products sorted by most expensive",
+        "parameters": [
+          {
+            "name": "removed_status",
+            "type": "string",
+            "in": "query",
+            "default": "all"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/shop/list_products": {
+      "get": {
+        "tags": [
+          "shop"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_shop_list_products",
+        "summary": "list all available products and create a new session",
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "definitions": {
+  },
+  "tags": [
+
+  ],
+  "host": "localhost:3000"
+}

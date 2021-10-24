@@ -28,4 +28,5 @@
 coverage
 doc/*
 !doc/swagger
+!doc/apidoc/schema_swagger_form_data.json
 
