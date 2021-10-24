@@ -1,22 +1,22 @@
 class Admin::ProductsController < ApplicationController
   before_action :set_product, only: [:show, :update, :destroy]
 
-  # GET /products
-  api :GET, '/products', 'List products'
+  # GET /admin/products
+  api :GET, '/admin/products', 'List products'
   def index
     @products = Product.all
 
     render json: @products
   end
 
-  # GET /products/1
-  api :GET, '/products/:id', 'Show a product'
+  # GET /admin/products/1
+  api :GET, '/admin/products/:id', 'Show a product'
   def show
     render json: @product
   end
 
-  # POST /products
-  api :POST, '/products', 'Create a product'
+  # POST /admin/products
+  api :POST, '/admin/products', 'Create a product'
   error code: 422
   def create
     @product = Product.new(product_params)
@@ -28,8 +28,8 @@ class Admin::ProductsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /products/1
-  api :PATCH, '/products/:id', 'Update a product'
+  # PATCH/PUT /admin/products/1
+  api :PATCH, '/admin/products/:id', 'Update a product'
   error code: 422
   def update
     if @product.update(product_params)
@@ -39,8 +39,8 @@ class Admin::ProductsController < ApplicationController
     end
   end
 
-  # DELETE /products/1
-  api :DELETE, '/products/:id', 'Destroy a product'
+  # DELETE /admin/products/1
+  api :DELETE, '/admin/products/:id', 'Destroy a product'
   def destroy
     @product.destroy
   end

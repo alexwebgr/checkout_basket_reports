@@ -1,22 +1,22 @@
 class Admin::CheckoutProductsController < ApplicationController
   before_action :set_checkout_product, only: [:show, :update, :destroy]
 
-  # GET /checkout_products
-  api :GET, '/checkout_products', 'List checkout products'
+  # GET /admin/checkout_products
+  api :GET, '/admin/checkout_products', 'List checkout products'
   def index
     @checkout_products = CheckoutProduct.all
 
     render json: @checkout_products
   end
 
-  # GET /checkout_products/1
-  api :GET, '/checkout_products/:id', 'Show a checkout product'
+  # GET /admin/checkout_products/1
+  api :GET, '/admin/checkout_products/:id', 'Show a checkout product'
   def show
     render json: @checkout_product
   end
 
-  # POST /checkout_products
-  api :POST, '/checkout_products', 'Create a checkout product'
+  # POST /admin/checkout_products
+  api :POST, '/admin/checkout_products', 'Create a checkout product'
   error code: 422
   def create
     @checkout_product = CheckoutProduct.new(checkout_product_params)
@@ -28,8 +28,8 @@ class Admin::CheckoutProductsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /checkout_products/1
-  api :PATCH, '/checkout_products/:id', 'Update a checkout product'
+  # PATCH/PUT /admin/checkout_products/1
+  api :PATCH, '/admin/checkout_products/:id', 'Update a checkout product'
   error code: 422
   def update
     if @checkout_product.update(checkout_product_params)
@@ -39,8 +39,8 @@ class Admin::CheckoutProductsController < ApplicationController
     end
   end
 
-  # DELETE /checkout_products/1
-  api :DELETE, '/checkout_products/:id', 'Destroy a checkout product'
+  # DELETE /admin/checkout_products/1
+  api :DELETE, '/admin/checkout_products/:id', 'Destroy a checkout product'
   def destroy
     @checkout_product.destroy
   end

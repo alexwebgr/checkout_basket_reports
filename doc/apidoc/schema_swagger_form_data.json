@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "CheckoutBasket (params in:formData)",
-    "description": "\n<p>Another API description</p>\n",
+    "description": "\n<p>Endpoint docs</p>\n",
     "version": "1.0",
     "x-copyright": null
   },
@@ -12,7 +12,7 @@
     "multipart/form-data"
   ],
   "paths": {
-    "/checkout_products": {
+    "/admin/checkout_products": {
       "get": {
         "tags": [
           "checkout_products"
@@ -21,7 +21,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "get_checkout_products",
+        "operationId": "get_admin_checkout_products",
         "summary": "List checkout products",
         "parameters": [
 
@@ -41,7 +41,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "post_checkout_products",
+        "operationId": "post_admin_checkout_products",
         "summary": "Create a checkout product",
         "parameters": [
 
@@ -54,7 +54,7 @@
         "description": ""
       }
     },
-    "/checkout_products/{id}": {
+    "/admin/checkout_products/{id}": {
       "get": {
         "tags": [
           "checkout_products"
@@ -63,7 +63,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "get_checkout_products_id",
+        "operationId": "get_admin_checkout_products_id",
         "summary": "Show a checkout product",
         "parameters": [
           {
@@ -88,7 +88,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "patch_checkout_products_id",
+        "operationId": "patch_admin_checkout_products_id",
         "summary": "Update a checkout product",
         "parameters": [
           {
@@ -113,7 +113,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "delete_checkout_products_id",
+        "operationId": "delete_admin_checkout_products_id",
         "summary": "Destroy a checkout product",
         "parameters": [
           {
@@ -131,7 +131,7 @@
         "description": ""
       }
     },
-    "/checkout_sessions": {
+    "/admin/checkout_sessions": {
       "get": {
         "tags": [
           "checkout_sessions"
@@ -140,7 +140,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "get_checkout_sessions",
+        "operationId": "get_admin_checkout_sessions",
         "summary": "List checkout sessions",
         "parameters": [
 
@@ -160,7 +160,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "post_checkout_sessions",
+        "operationId": "post_admin_checkout_sessions",
         "summary": "Create a checkout session",
         "parameters": [
 
@@ -173,7 +173,7 @@
         "description": ""
       }
     },
-    "/checkout_sessions/{id}": {
+    "/admin/checkout_sessions/{id}": {
       "get": {
         "tags": [
           "checkout_sessions"
@@ -182,7 +182,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "get_checkout_sessions_id",
+        "operationId": "get_admin_checkout_sessions_id",
         "summary": "Show a checkout session",
         "parameters": [
           {
@@ -207,7 +207,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "patch_checkout_sessions_id",
+        "operationId": "patch_admin_checkout_sessions_id",
         "summary": "Update a checkout session",
         "parameters": [
           {
@@ -232,7 +232,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "put_checkout_sessions_id",
+        "operationId": "put_admin_checkout_sessions_id",
         "summary": "Update a checkout session",
         "parameters": [
           {
@@ -257,7 +257,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "delete_checkout_sessions_id",
+        "operationId": "delete_admin_checkout_sessions_id",
         "summary": "Destroy a checkout session",
         "parameters": [
           {
@@ -275,7 +275,7 @@
         "description": ""
       }
     },
-    "/products": {
+    "/admin/products": {
       "get": {
         "tags": [
           "products"
@@ -284,7 +284,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "get_products",
+        "operationId": "get_admin_products",
         "summary": "List products",
         "parameters": [
 
@@ -304,7 +304,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "post_products",
+        "operationId": "post_admin_products",
         "summary": "Create a product",
         "parameters": [
 
@@ -317,7 +317,7 @@
         "description": ""
       }
     },
-    "/products/{id}": {
+    "/admin/products/{id}": {
       "get": {
         "tags": [
           "products"
@@ -326,7 +326,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "get_products_id",
+        "operationId": "get_admin_products_id",
         "summary": "Show a product",
         "parameters": [
           {
@@ -351,7 +351,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "patch_products_id",
+        "operationId": "patch_admin_products_id",
         "summary": "Update a product",
         "parameters": [
           {
@@ -376,7 +376,7 @@
           "application/x-www-form-urlencoded",
           "multipart/form-data"
         ],
-        "operationId": "delete_products_id",
+        "operationId": "delete_admin_products_id",
         "summary": "Destroy a product",
         "parameters": [
           {
