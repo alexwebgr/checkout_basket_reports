@@ -1,4 +1,4 @@
-class CheckoutProductsController < ApplicationController
+class Admin::CheckoutProductsController < ApplicationController
   before_action :set_checkout_product, only: [:show, :update, :destroy]
 
   # GET /checkout_products

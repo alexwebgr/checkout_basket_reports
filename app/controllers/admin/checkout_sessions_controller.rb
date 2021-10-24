@@ -1,4 +1,4 @@
-class CheckoutSessionsController < ApplicationController
+class Admin::CheckoutSessionsController < ApplicationController
   before_action :set_checkout_session, only: [:show, :update, :destroy]
 
   # GET /checkout_sessions

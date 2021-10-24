@@ -11,8 +11,10 @@ Rails.application.routes.draw do
 
   get 'shop/list_products'
 
-  resources :checkout_products
-  resources :checkout_sessions
-  resources :products
+  scope module: :admin, path: '/admin' do
+    resources :checkout_products
+    resources :checkout_sessions
+    resources :products
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
