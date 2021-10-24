@@ -1,0 +1,17 @@
+[
+  {
+    "amount_removed": 2,
+    "product_name": "MyString",
+    "product_price": 400.0
+  },
+  {
+    "amount_removed": 1,
+    "product_name": "MyString",
+    "product_price": 200.0
+  },
+  {
+    "amount_removed": 1,
+    "product_name": "MyString",
+    "product_price": 100.0
+  }
+]
